@@ -24,9 +24,9 @@ export default function App() {
   }
   const friendInfo = friends.map((friend) => {
     return (<div key={friend}>
-      <img src={ friend.picture } alt={ friend.name }></img>
+      <img src={ friend.picture } alt={ friend.name } width="250px" height="175px"></img>
       <br/>
-      <span>{ friend.name }</span>
+      <span style={{display: "flex", justifyContent: "center"}}>{ friend.name }</span>
     </div>)
   })
   return <div>
